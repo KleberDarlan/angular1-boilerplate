@@ -1,0 +1,13 @@
+{
+  "name": "login_poc",
+  "version": "0.0.0",
+  "authors": [
+    "Kleber Monte kleberdarlanmonte@gmail.com"
+  ],
+  "description": "Teste de Login com djangorestframework e Angular",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.3.0",
+    "angular-route": "~1.5.0"
+  }
+}
