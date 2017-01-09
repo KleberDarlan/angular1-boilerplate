@@ -1,10 +1,24 @@
-<h2>Login</h2>
-<input type="text" ng-model="user.email"><br>
-<input type="password" ng-model="user.password"><br>
-<input type="button" ng-click="logIn()" value="Entrar">
-<p ng-repeat="error in errors">
-  {{ error }}
-</p>
-<p>
-  {{ message }}
-</p>
+<div class="wrapper">
+	<div class="container">
+		<h1>Angular 1.x Boilerplate</h1>
+
+		<form class="form">
+			<input type="text" placeholder="Username">
+			<input type="password" placeholder="Password">
+			<button type="button" ng-click="fakeLogIn()" id="login-button">Login</button>
+		</form>
+	</div>
+
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>

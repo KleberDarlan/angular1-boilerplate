@@ -1,9 +1,7 @@
 'use strict';
 
 angular
-  .module('login_poc', [
-    'ngRoute'
-  ])
+  .module('login_poc')
   .config([
     '$routeProvider',
     config
@@ -15,5 +13,5 @@ angular
       templateUrl: 'views/login.html',
       controller: 'AuthController'
     })
-    .otherwise({ redirectTo: '/' });
+    .otherwise({ redirectTo: '/login' });
   }
