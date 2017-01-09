@@ -1,26 +1,26 @@
 'use strict';
 
 angular.module('login_poc')
-  .factory('StorageService', function() {
+  .factory('StorageService', () => {
     return {
-      toJSON: function(item) {
+      toJSON: (item) => {
          return JSON.stringify(item);
       },
 
-      fromJSON: function(item) {
+      fromJSON: (item) => {
          return JSON.parse(item);
       },
 
-      setItem: function(key, item) {
+      setItem: (key, item) => {
          if (typeof(item) == 'object') item = this.toJSON(item);
          localStorage.setItem(key, item);
       },
 
-      getItem: function(key) {
+      getItem: (key) => {
          return this.fromJSON(localStorage.getItem(key));
       },
 
-      removeItem: function(key) {
+      removeItem: (key) => {
          localStorage.removeItem(key);
       }
     }

@@ -1,19 +1,25 @@
 'use strict';
 
 angular.module('login_poc')
-  .controller('AuthController', ['$scope', 'AuthService', 'StorageService',
-  function($scope, AuthService, StorageService) {
+  .controller('AuthController', AuthController);
 
-    $scope.logIn = function() {
-      var data = $scope.user;
+function AuthController ($scope, AuthService, StorageService) {
 
-      AuthService.login(data)
-      .then(function(data) {
-        StorageService.setItem('user', data.user);
-        StorageService.setItem('token', data.token);
-      })
-      .catch(function(err) {
-        $scope.errors = err.data;
-      });
-    }
-  }]);
+  $scope.logIn = () => {
+    let data = $scope.user;
+
+    AuthService.login(data)
+    .then((data) => {
+      StorageService.setItem('user', data.user);
+      StorageService.setItem('token', data.token);
+    })
+    .catch((err) => {
+      $scope.errors = err.data;
+    });
+  };
+
+  $scope.fakeLogIn = () => {
+    $('form').fadeOut(500);
+    $('.wrapper').addClass('form-success');
+  };
+}
