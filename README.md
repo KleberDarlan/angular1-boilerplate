@@ -9,4 +9,4 @@
 * Execute ```npm install``` na raiz do projeto;
 * Execute ```bower install``` na raiz do projeto;
 * ```npm start```;
-* Comece a usar ;).
+* Acesse http://localhost:4000/#/login.
