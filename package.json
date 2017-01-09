@@ -1,7 +1,7 @@
 {
   "name": "angular1-boilerplate",
   "version": "1.0.0",
-  "description": "Template de projeto com localStorage e Login com JWT para aplicações cliente usando Angular1",
+  "description": "Template de projeto com localStorage e Autenticação com JWT para aplicações cliente usando Angular1",
   "main": "app.js",
   "dependencies": {
     "express": "~4.14.0"
@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/KleberMonte/angular1-boilerplate.git"
+    "url": "git+ssh://git@github.com/kleberdarlan/angular1-boilerplate.git"
   },
   "author": "Kleber Monte <kleberdarlanmonte@gmail.com>",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/KleberMonte/angular1-boilerplate#readme"
+  "homepage": "https://github.com/kleberdarlan/angular1-boilerplate#readme"
 }
