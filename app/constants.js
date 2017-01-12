@@ -10,7 +10,7 @@ function httpRequest(url, method, data, $q, $http) {
     url: baseUrl + url,
     data: data
   })
-  .success((data, status, headers, config) => {
+  .then((data, status, headers, config) => {
     deferred.resolve(data);
   })
   .catch((data, status, headers, config) => {
