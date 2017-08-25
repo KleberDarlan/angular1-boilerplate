@@ -1,6 +1,6 @@
 # angular1-boilerplate
 
-## Template de projeto angular 1.x com serviço de autenticação e util para persistir dados em localStorage.
+## Template de projeto angular 1.x com serviço de autenticação e serviço para persistir dados em localStorage.
 
 ### Como usar:
 
